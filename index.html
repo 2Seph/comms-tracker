@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Commissions Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Art Commissions Tracker</h1>
+
+  <form id="commForm">
+    <label for="commName">Commission Name:</label>
+    <input type="text" id="commName" placeholder="Enter commission name" required>
+
+    <label for="price">Price (₱):</label>
+    <input type="number" id="price" placeholder="Enter price" required>
+
+    <label for="startTime">Start Date:</label>
+    <input type="datetime-local" id="startTime" required>
+
+    <label for="lastUpdate">Last Updated:</label>
+    <input type="datetime-local" id="lastUpdate" required>
+
+    <button type="submit">Add Commission</button>
+  </form>
+
+  <h2>Commissions</h2>
+  <div class="table-wrapper">
+    <table id="commTable">
+      <thead>
+        <tr>
+          <th>Commission</th>
+          <th>Price (₱)</th>
+          <th>Start Date</th>
+          <th>Last Updated</th>
+          <th>Days Since Start</th>
+          <th>Days Since Last Update</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be added dynamically here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
